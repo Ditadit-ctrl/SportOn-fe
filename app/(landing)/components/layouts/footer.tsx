@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="px-4 bg-dark-alternate text-white mt-20">
+        <footer className="px-4 bg-dark-alternate text-white mt-20 text-[12px] sm:text-base">
             <div className="container mx-auto flex justify-between pt-14 pb-24">
                 <div className="w-105">
                     <Image src="/img/layouts/logo-footer.svg" alt="SportON Logo" width={187} height={44} className="my-10" />
@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="border-t border-t-white/15 text-center md:test-left">
-                <div className="container mx-auto py-6.5 flex justify-between text-sm">
+                <div className="container mx-auto py-6.5 flex justify-between">
                     <span>© 2024 SportON. All rights reserved.</span>
                     <div className="grid grid-cols-2 w-105">
                         <Link href="#">Privacy Policy</Link>
