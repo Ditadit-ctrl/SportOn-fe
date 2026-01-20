@@ -9,7 +9,7 @@ import Button from "../ui/button";
 const Header = () => {
     const [open, setOpen] = useState(false);
     return (
-        <header className=" sticky w-full top-0 z-50 bg-white">
+        <header className="sticky w-full top-0 z-50 bg-white">
             <div className="px-4 sm:container flex justify-between py-6 items-center mx-auto">
                 <div className="w-1/4 flex items-center gap-4">
                     <Button variant="ghost" className="md:hidden p-0!" onClick={() => setOpen(!open)}>

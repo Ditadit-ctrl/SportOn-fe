@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
     return (
-        <section id="hero-section" className="mx-auto flex lg:h-screen py-10 lg:pt-0 overflow-x-hidden">
+        <section id="hero-section" className="mx-auto flex h-screen overflow-hidden py-10">
             <div className="relative self-center mx-auto">
                 <Image src="/img/hero/img-basketball.png" alt="hero image" width={532} height={532} className="absolute -top-20 -z-100 -left-65 grayscale" />
                 <div className="px-[10px] relative w-full flex items-center flex-col lg:ml-10 lg:block">
