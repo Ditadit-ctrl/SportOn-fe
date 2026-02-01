@@ -1,0 +1,37 @@
+"use client";
+
+import { FiArrowRight, FiChevronDown, FiChevronUp, FiShoppingBag } from "react-icons/fi"
+import Button from "../ui/button"
+import { useState } from "react"
+import { useRouter } from "next/navigation";
+
+const ProductActions = () => {
+    const { push } = useRouter();
+    const [qty, setQty] = useState(1);
+
+    const checkout = () => {
+
+    }
+
+    return (
+        <div className="flex gap-5">
+            <div className="border border-gray-500 inline-flex min-w-10 sm:min-w-20">
+                <div className="aspect-square sm:text-xl font-medium border-r border-gray-500 flex justify-center items-center w-3/4 text-xs">
+                    <span>{qty}</span>
+                </div>
+                <div className="flex flex-col w-3/12">
+                    <button className="border-b border-gray-500 cursor-pointer h-1/2 aspect-square flex items-center justify-center" onClick={() => setQty(qty + 1)}>
+                        <FiChevronUp />
+                    </button>
+                    <button className="cursor-pointer h-1/2 aspect-square flex items-center justify-center" onClick={() => setQty(qty > 1 ? qty - 1 : qty)}>
+                        <FiChevronDown />
+                    </button>
+                </div>
+            </div>
+            <Button className=" w-full"><FiShoppingBag size={24}/>Add to Cart</Button>
+            <Button className="w-full" variant="dark">Checkout Now <FiArrowRight size={24}/></Button>
+        </div>
+    )
+}
+
+export default ProductActions;

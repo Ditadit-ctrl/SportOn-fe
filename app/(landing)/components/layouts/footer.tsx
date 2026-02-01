@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="px-4 bg-dark-alternate text-white mt-20 text-[12px] sm:text-base">
+        <footer className="px-4 bg-dark-alternate text-white text-[12px] sm:text-base">
             <div className="container mx-auto flex justify-between pt-14 pb-24">
                 <div className="w-105">
-                    <Image src="/img/layouts/logo-footer.svg" alt="SportON Logo" width={187} height={44} className="my-10" />
+                    <Image src="/img/layouts/home/logo-footer.svg" alt="SportON Logo" width={187} height={44} className="my-10" />
                     <p className=" mp-8">Engineered for endurance and designed for speed.  Experience gear that moves as fast as you do.</p>
                 </div>
                 <div className="w-105 grid grid-cols-1 text-end sm:text-start sm:grid-cols-2 ">

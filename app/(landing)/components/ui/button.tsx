@@ -14,7 +14,7 @@ const Button = ({ children, className, variant = 'primary', size = 'normal', ...
     };
     const sizes = {
         normal: 'px-4 py-2 sm:px-9 sm:py-4 sm:text-base text-[12px]',
-        small: 'px-7 py-[10px]',
+        small: 'px-7 py-[10px] sm:text-base text-[12px]',
     };
 
     return (

@@ -25,3 +25,18 @@
 * {
   @apply font-poppins;
 }
+
+
+/* input group */
+.input-group {
+  @apply mb-5;
+}
+
+.input-group label {
+  @apply block text-xs mb-1;
+}
+
+.input-group input,
+.input-group textarea {
+  @apply bg-gray-100 py-2.5 px-4 w-full focus:border focus:border-gray-400 outline-none text-sm;
+}
