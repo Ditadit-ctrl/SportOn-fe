@@ -10,7 +10,7 @@ const ProductActions = () => {
     const [qty, setQty] = useState(1);
 
     const checkout = () => {
-
+        push("/checkout");
     }
 
     return (
@@ -28,8 +28,8 @@ const ProductActions = () => {
                     </button>
                 </div>
             </div>
-            <Button className=" w-full"><FiShoppingBag size={24}/>Add to Cart</Button>
-            <Button className="w-full" variant="dark">Checkout Now <FiArrowRight size={24}/></Button>
+            <Button className=" w-full text-xs"><FiShoppingBag size={24}/>Add to Cart</Button>
+            <Button className="w-full text-xs" variant="dark" onClick={checkout}>Checkout Now <FiArrowRight size={24}/></Button>
         </div>
     )
 }
