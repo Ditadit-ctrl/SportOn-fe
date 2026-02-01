@@ -72,7 +72,7 @@ const CartPopup = () => {
     }
 
     return (
-        <div className="absolute bg-white right-0 top-12 shadow-xl shadow-black/10 border border-gray-200 w-90">
+        <div className="absolute bg-white right-0 top-12 shadow-xl shadow-black/10 border border-gray-200 w-70 sm:w-90">
             <div className="p-4 border-b border-gray-200 font-bold text-center">
                 Shoping Cart
             </div>
@@ -84,7 +84,7 @@ const CartPopup = () => {
                             <Image src={`/img/products/${item.image}`} alt={item.name} width={63} height={63} className="aspect-square object-contain" />
                         </div>
                         <div className="self-center">
-                            <div className="text-sm font-medium">{item.name}</div>
+                            <div className="text-xs sm:text-sm font-medium">{item.name}</div>
                             <div className="flex gap-3 font-medium text-xs">
                                 <div>{item.qty}x</div>
                                 <div className="text-primary">{priceFormatter(item.price)}</div>
